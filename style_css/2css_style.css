@@ -1,0 +1,14 @@
+body,table {padding : 0 ;margin : 0; }
+table.main{margin-left : 5pt; margin-top: 5 pt; border-collapse: collapse; background : lavender; }
+td,input,select,textarea{
+	font-family : Tahoma;
+	font-size : 8px;
+	color : #000000;
+	vertical-align : top;
+}
+td {padding: 0px;}
+td.lab3{font-family : Tahoma;
+	font-size : 30px;
+	color : #191970;
+	text-align : center;
+	}

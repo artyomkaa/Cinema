@@ -44,7 +44,21 @@ class film {
 		$this->img = $data[6];
 		
    }
-	
+   
+   function getFilm_titre($par){
+        $q = "SELECT * FROM film WHERE titre = ".$par;
+        $res = mysql_query($q);
+		$data = mysql_fetch_array($res);
+		$this->id = $data[0];
+		$this->titre = $data[1];
+		$this->resume = $data[2];
+		$this->duree = $data[3];
+		$this->public_cible = $data[4];
+		$this->sample = $data[5];
+		$this->img = $data[6];
+   }
+   
+
 }
 
 ?>

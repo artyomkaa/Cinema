@@ -10,27 +10,23 @@ include("include/bd.php");
 </head>
 <body>
 
-<h1>WEB</h1>
-<a href="index.php">Main page</a><br>
 
-
-<h1>go go go</h1>
-
-					
-<h2>Hello Tema, Slava, Julia</h2>
-<table border = 0 width = 1000>
-	<tr>	
-		<td colspan =3 width = 1000 height = 320>Site's head  [ gradient -> Julie]</td>
-	</tr>
-	<tr>	
-		<td colspan =3 width = 1000 height = 80>Search head [ gradient -> Julie] 
-		<form action="search.php" method="post">
-		<input name="text" type="text" size="100" maxlength="98">
-		<input type="submit" name="submit" value="Search">
-		<a href = ''>
-		</form>
-		</td>
-	</tr>
+<table width= 1000 border = 0>
+	<tr><td colspan =3 width = 1000 height = 100>
+		Site's head  [ gradient -> Julie]
+	</td></tr>
+	<tr><td colspan =3 width = 1000 height = 20>
+		<?php
+		//INCLUDE MENU
+		include('include/menu_head.php');
+		?>
+	</td></tr>
+	<tr><td colspan =3 width = 1000 height = 80>
+		<?php
+		//INCLUDE HEAD
+		include('include/head.php');
+		?>
+	</td></tr>
 	
 	<tr><td>	
 		<?php 
@@ -78,10 +74,12 @@ include("include/bd.php");
 		
 	</td>
 	</tr>
-	<tr>	
-		<td colspan =3>bottom [ gradient -> Julie]</td>
-
-	</tr>
+	<tr><td colspan =3>
+		<?php
+		//INCLUDE BOTTOM
+		include('include/bottom.php');
+		?>
+	</td></tr>
 </table>
 </body>
 </html>
